@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabharata Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 class="logo">⚔️ Mahabharata</h2>
+        <ul>
+            <li onclick="showDashboard()">🏠 Dashboard</li>
+            <li onclick="loadData('characters')">🧍 Characters</li>
+            <li onclick="loadData('kingdoms')">🏰 Kingdoms</li>
+            <li onclick="loadData('battles')">⚔ Battles</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1 id="title">Dashboard</h1>
+        <div id="content" class="card-container">
+            <div class="welcome-box">
+                <h2>Welcome to Mahabharata Explorer</h2>
+                <p>Explore Characters, Kingdoms, and Battles from the Mahabharata.</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+function showDashboard() {
+    document.getElementById("title").innerText = "Dashboard";
+    document.getElementById("content").innerHTML = `
+        <div class="welcome-box">
+            <h2>Welcome to Mahabharata Explorer</h2>
+            <p>Select a section from the sidebar to get started.</p>
+        </div>
+    `;
+}
+
+async function loadData(type) {
+    document.getElementById("title").innerText = type.charAt(0).toUpperCase() + type.slice(1);
+
+    let api = `http://127.0.0.1:8000/${type}`;
+
+    try {
+        let res = await fetch(api);
+        let data = await res.json();
+
+        let container = document.getElementById("content");
+        container.innerHTML = "";
+
+        data.forEach(item => {
+            let card = document.createElement("div");
+            card.className = "card";
+
+            card.innerHTML = `
+                <h3>${item.name}</h3>
+                <p><strong>ID:</strong> ${item.id}</p>
+            `;
+
+            container.appendChild(card);
+        });
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+</script>
+
+</body>
+</html>

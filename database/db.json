@@ -1,0 +1,175 @@
+{
+  "characters": [
+    {
+      "id": "1",
+      "name": "Arjuna",
+      "role": "Warrior",
+      "kingdom": "Indraprastha"
+    },
+    {
+      "id": "2",
+      "name": "Bhishma",
+      "role": "Commander",
+      "kingdom": "Hastinapura"
+    },
+    {
+      "id": "3",
+      "name": "Krishna",
+      "role": "Charioteer",
+      "kingdom": "Dwarka"
+    },
+    {
+      "id": "4",
+      "name": "Karna",
+      "role": "Warrior",
+      "kingdom": "Anga"
+    },
+    {
+      "id": "5",
+      "name": "Dronacharya",
+      "role": "Guru",
+      "kingdom": "Hastinapura"
+    },
+    {
+      "id": "6",
+      "name": "Yudhishthira",
+      "role": "King",
+      "kingdom": "Indraprastha"
+    },
+    {
+      "id": "7",
+      "name": "Bhima",
+      "role": "Warrior",
+      "kingdom": "Indraprastha"
+    },
+    {
+      "id": "8",
+      "name": "Nakula",
+      "role": "Warrior",
+      "kingdom": "Indraprastha"
+    },
+    {
+      "id": "9",
+      "name": "Sahadeva",
+      "role": "Warrior",
+      "kingdom": "Indraprastha"
+    },
+    {
+      "id": "10",
+      "name": "Duryodhana",
+      "role": "Prince",
+      "kingdom": "Hastinapura"
+    },
+    {
+      "id": "11",
+      "name": "Dushasana",
+      "role": "Prince",
+      "kingdom": "Hastinapura"
+    },
+    {
+      "id": "12",
+      "name": "Shakuni",
+      "role": "Advisor",
+      "kingdom": "Gandhara"
+    },
+    {
+      "id": "13",
+      "name": "Abhimanyu",
+      "role": "Warrior",
+      "kingdom": "Indraprastha"
+    },
+    {
+      "id": "14",
+      "name": "Ghatotkacha",
+      "role": "Warrior",
+      "kingdom": "Raksasa"
+    },
+    {
+      "id": "15",
+      "name": "Drupada",
+      "role": "King",
+      "kingdom": "Panchala"
+    },
+    {
+      "id": "16",
+      "name": "Draupadi",
+      "role": "Queen",
+      "kingdom": "Panchala"
+    },
+    {
+      "id": "17",
+      "name": "shikandi",
+      "role": "warrior",
+      "kingdom": "panchala"
+    },
+    {
+      "id": "17",
+      "name": "shikandi",
+      "role": "warrior",
+      "kingdom": "panchala"
+    },
+    {
+      "id": "17",
+      "name": "shikandi",
+      "role": "warrior",
+      "kingdom": "panchala"
+    }
+  ],
+  "kingdoms": [
+    {
+      "id": "1",
+      "name": "Hastinapura",
+      "ruler": "Dhritarashtra"
+    },
+    {
+      "id": "2",
+      "name": "Indraprastha",
+      "ruler": "Yudhishthira"
+    },
+    {
+      "id": "3",
+      "name": "Dwarka",
+      "ruler": "Krishna"
+    },
+    {
+      "id": "4",
+      "name": "Anga",
+      "ruler": "Karna"
+    },
+    {
+      "id": "5",
+      "name": "Panchala",
+      "ruler": "Drupada"
+    },
+    {
+      "id": "6",
+      "name": "Gandhara",
+      "ruler": "Shakuni"
+    },
+    {
+      "id": "7",
+      "name": "Kashi",
+      "ruler": "King of Kashi"
+    }
+  ],
+  "battles": [
+    {
+      "id": "1",
+      "name": "Kurukshetra War",
+      "duration": "18 days",
+      "main_participants": "Pandavas, Kauravas"
+    },
+    {
+      "id": "2",
+      "name": "Virata Battle",
+      "duration": "1 day",
+      "main_participants": "Arjuna vs Kauravas"
+    },
+    {
+      "id": "3",
+      "name": "Jayadratha Vadh",
+      "duration": "1 day",
+      "main_participants": "Arjuna vs Jayadratha"
+    }
+  ]
+}
